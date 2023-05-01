@@ -1,0 +1,20 @@
+use "C:\Users\Tobyd\OneDrive - Aarhus universitet\Uni-livet\6. Semester\Bachelor\Data\Government Spending as Percantage of BNP.dta" 
+
+replace country="Cabo Verde" if country=="Cape Verde"
+replace country="Congo, Rep." if country=="Congo"
+replace country="Congo, Dem. Rep." if country=="Democratic Republic of Congo"
+replace country="Gambia, The" if country=="Gambia"
+replace country="Iran, Islamic Rep." if country=="Iran"
+replace country="Korea, Rep." if country=="South Korea"
+replace country="Kyrgyz Republic" if country=="Kyrgyzstan"
+replace country="Lao PDR" if country=="Laos"
+replace country="Russian Federation" if country=="Russia"
+replace country="Slovak Republic" if country=="Slovakia"
+replace country="Syrian Arab Republic" if country=="Syria"
+replace country="Turkiye" if country=="Turkey"
+replace country="Venezuela, RB" if country=="Venezuela"
+replace country="Yemen, Rep." if country=="Yemen"
+replace country="Egypt, Arab Rep." if country=="Egypt"
+replace country="Timor-Leste" if country=="East Timor"
+
+save "C:\Users\Tobyd\OneDrive - Aarhus universitet\Uni-livet\6. Semester\Bachelor\Data\Government Spending as Percantage of BNP.dta", replace
